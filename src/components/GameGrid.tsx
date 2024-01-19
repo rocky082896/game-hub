@@ -3,7 +3,6 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import useData from "../hooks/useData";
 
 const GameGrid = () => {
   const { data, error, isLoading } = useGames();
@@ -15,7 +14,7 @@ const GameGrid = () => {
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
         padding="10px"
-        spacing={10}
+        spacing={3}
       >
         {isLoading &&
           skeletons.map((skeleton) => (
