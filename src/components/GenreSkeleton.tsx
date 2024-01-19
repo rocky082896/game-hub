@@ -1,7 +1,16 @@
-import { Skeleton } from "@chakra-ui/react";
+import { Button, Image, Skeleton } from "@chakra-ui/react";
 
 const GenreSkeleton = () => {
-  <Skeleton height="200px" />;
+  return (
+    <>
+      <Image>
+        <Skeleton />;
+      </Image>
+      <Button>
+        <Skeleton />;
+      </Button>
+    </>
+  );
 };
 
 export default GenreSkeleton;
